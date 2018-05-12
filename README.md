@@ -1,9 +1,12 @@
 # object-detection-custommade-model
 
-I have modified all files in object detection folder so that it will work in Windows OS with out giving PYTHONPATH error.
+Please run below steps in ubuntu OS.
 
 Download TensorFlow models from below site as I couldn't upload my models folder.
 https://github.com/tensorflow/models
+
+Please run the below commands to set the path.
+- export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 - Collected Images and labeled them.
 - run the lableimg.py from labelimg folder.
@@ -22,6 +25,7 @@ https://github.com/tensorflow/models
     - Python3 export_inference_graph.py \ --input_type image_tensor \ --pipeline_config_path training/ssd_mobilenet_v1_coco.config \ --trained_checkpoint_prefix training/model.ckpt-6012 \ --output_directory custom_made_graph
 
 - Modified tutorial code given by Tensorflow to take input as my frozen_inference_graph and ran the code to get the output.
+- Keep object_detection_custommade.ipynb file in models/research/object_detection folder.
 - Run the object_detection_custommade.ipynb file in jupyter notebook from models/research/object_detection folder.
 # Object detection Realtime
 - Install opencv
