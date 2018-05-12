@@ -1,9 +1,12 @@
 # object-detection-custommade-model
 
-I have modified all files in object detection folder so that it will work in Windows OS with out giving PYTHONPATH error.
+Please run below steps in ubuntu OS.
 
 Download TensorFlow models from below site as I couldn't upload my models folder.
 https://github.com/tensorflow/models
+
+Please run the below commands to set the path.
+- export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 - Collected Images and labeled them.
 - run the lableimg.py from labelimg folder.
